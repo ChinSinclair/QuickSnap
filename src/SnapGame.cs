@@ -1,4 +1,4 @@
-using System;
+		using System;
 using SwinGameSDK;
 using CardGames.GameLogic;
 
@@ -27,20 +27,20 @@ namespace CardGames
 				myGame.FlipNextCard ();
 			}
 
-            if (myGame.IsStarted)
-            {
-                if (SwinGame.KeyTyped(KeyCode.vk_LSHIFT) && SwinGame.KeyTyped(KeyCode.vk_RSHIFT))
-                {
-                    //TODO: Add sound effects
-                }
-                else if (SwinGame.KeyTyped(KeyCode.vk_LSHIFT))
-                {
-                    myGame.PlayerHit(0);
-                }
-                else if (SwinGame.KeyTyped(KeyCode.vk_RSHIFT))
-                {
-                    myGame.PlayerHit(1);
-                }
+          		  if (myGame.IsStarted)
+        		    {
+                		if (SwinGame.KeyTyped(KeyCode.vk_LSHIFT) && SwinGame.KeyTyped(KeyCode.vk_RSHIFT))
+                		{
+                    			//TODO: Add sound effects
+                		}
+                		else if (SwinGame.KeyTyped(KeyCode.vk_LSHIFT))
+                		{
+                		    myGame.PlayerHit(0);
+                		}
+                		else if (SwinGame.KeyTyped(KeyCode.vk_RSHIFT))
+                		{
+                		    myGame.PlayerHit(1);
+               			}
             }
 
 		}
