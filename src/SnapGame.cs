@@ -1,4 +1,4 @@
-		using System;
+using System;
 using SwinGameSDK;
 using CardGames.GameLogic;
 
@@ -10,7 +10,7 @@ namespace CardGames
         {
             Bitmap cards;
             cards = SwinGame.LoadBitmapNamed ("Cards", "Cards.png");
-            SwinGame.BitmapSetCellDetails (cards, 82, 110, 13, 5, 53);      // set the cells in the bitmap to match the cards
+            SwinGame.BitmapSetCellDetails (cards, 82, 110, 13, 5, 53);      // set the cells in the bitmap to match the card
         }
 
 		/// <summary>
@@ -24,7 +24,7 @@ namespace CardGames
 
 			if (SwinGame.KeyTyped (KeyCode.vk_SPACE))
 			{
-				myGame.FlipNextCard ();
+                myGame.Start ();
 			}
 
           		  if (myGame.IsStarted)
