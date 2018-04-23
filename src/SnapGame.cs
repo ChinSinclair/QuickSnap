@@ -9,12 +9,12 @@ namespace CardGames
         public static void LoadResources()
         {
             Bitmap cards;
-            cards = SwinGame.LoadBitmapNamed ("Cards", "Cards.png");
+            cards = SwinGame.LoadBitmapNamed ("Cards", "//Users/eddielui/Desktop/Git/QuickSnap/Resources/images/Cards.png");
 
             SwinGame.BitmapSetCellDetails (cards, 82, 110, 13, 5, 53);      // set the cells in the bitmap to match the cards
 			
 		SwinGame.LoadFontNamed ("GameFont", "Chunkfive.otf", 12);
-	}
+	    }
 
 		/// <summary>
 		/// Respond to the user input -- with requests affecting myGame
